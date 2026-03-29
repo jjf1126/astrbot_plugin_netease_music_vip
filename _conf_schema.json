@@ -1,0 +1,42 @@
+{
+  "global_cookie": {
+    "description": "全局网易云音乐 Cookie 凭证",
+    "type": "text",
+    "hint": "用于机器人全局的网易云 API 请求。请填入包含 MUSIC_U 等字段的 Cookie 字符串。注意保护账号隐私，切勿将凭证泄露给他人。",
+    "default": "",
+    "obvious_hint": true,
+    "editor_mode": true,
+    "editor_language": "text",
+    "editor_theme": "vs-light"
+  },
+  "max_comments": {
+    "description": "获取热门评论的最大数量",
+    "type": "int",
+    "hint": "限制每次请求返回的评论条数，避免单次消息过长导致发送失败或刷屏。",
+    "default": 5
+  },
+  "enable_function_calling": {
+    "description": "启用大模型函数调用 (Function Calling)",
+    "type": "bool",
+    "hint": "开启后，大语言模型可以自主调用网易云音乐相关工具获取歌曲信息、歌词和评论。",
+    "default": true
+  },
+  "fallback_to_text": {
+    "description": "音乐卡片发送失败时回退为纯文本",
+    "type": "bool",
+    "hint": "在不支持富媒体音乐卡片消息的平台（如非QQ平台），自动转换为发送歌曲链接和文本信息。",
+    "default": true
+  },
+  "allow_user_login": {
+    "description": "允许普通用户使用登录指令",
+    "type": "bool",
+    "hint": "开启后普通用户也可使用 /ncm_login 设置自己的独立凭证。关闭则仅限管理员操作，有助于统一管理和保护隐私。",
+    "default": false
+  },
+  "search_limit": {
+    "description": "默认搜索结果数量",
+    "type": "int",
+    "hint": "当用户通过关键词搜索歌曲时，返回的候选歌曲数量。",
+    "default": 3
+  }
+}
