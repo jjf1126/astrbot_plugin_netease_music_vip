@@ -17,7 +17,7 @@ except ImportError:
     PYNCM_AVAILABLE = False
     logger.error("未安装 pyncm 库，网易云音乐插件可能无法正常工作。请执行 pip install pyncm")
 
-@register("astrbot_plugin_netease_music", "Developer", "网易云音乐插件。支持获取歌曲信息、评论，发送音乐卡片，并提供大模型函数调用。", "1.0.0", "https://github.com/developer/astrbot_plugin_netease_music")
+@register("astrbot_plugin_netease_music_vip", "Developer", "网易云音乐插件。支持获取歌曲信息、评论，发送音乐卡片，并提供大模型函数调用。", "1.0.0", "https://github.com/developer/astrbot_plugin_netease_music_vip")
 class NeteaseMusicPlugin(Star):
     def __init__(self, context: Context, config: AstrBotConfig):
         super().__init__(context)
